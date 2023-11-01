@@ -60,12 +60,6 @@ func (s *bidirectionalStreamServer) GetUserById(stream pb.UserService_GetUserByI
 		}
 
 		u, ok := users[req.UserId]
-		// re := regexp.MustCompile(`(?:^|[^0-9])(1[34578][0-9]{9})(?:$|[^0-9])`)
-		// submatch := re.FindStringSubmatch(u.Phone)
-		// if len(submatch) < 2 {
-		// 	// No match found
-		// 	fmt.Printf("No match found")
-		// }
 
 		if !ok {
 			u = pb.UserResponse{UserId: 100, FirstName: "Not Found", City: "Not Found", Phone: "Not Found", Height: 10000.99, Married: false}
@@ -103,8 +97,6 @@ func (s *bidirectionalStreamServer) GetUserListByIds(stream pb.UserService_GetUs
 		return err
 	}
 	log.Printf("[RECEVIED REQUEST] : %v\n", req)
-	//return nil
-	// u, ok := users[req]
 	return nil
 
 }

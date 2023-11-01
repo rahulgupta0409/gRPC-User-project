@@ -36,10 +36,8 @@ func main() {
 		}
 
 		log.Printf("[RECEIVED RESPONSE]: %v\n", resp)
-		//time.Sleep(1 * time.Second)
 	}
 
-	// b := []*pb.UserRequest{}
 	stream2.Send(&pb.UserList{
 		UserRequestList: []*pb.UserRequest{{UserId: 1}, {UserId: 2}, {UserId: 3}, {UserId: 200}},
 	})
@@ -49,5 +47,4 @@ func main() {
 	}
 
 	log.Printf("[RECEIVED RESPONSE]: %v\n", resp)
-	//time.Sleep(1 * time.Second)
 }

@@ -21,7 +21,7 @@ Follow these steps to run and test the gRPC application.
 ### 1. Clone the Repository
 Clone the repository using the command
 ~~~ 
-git clone https://github.com/yourusername/your-repo.git 
+git clone https://github.com/rahulgupta0409/totality-assignment.git
 ~~~
 ```
 cd totality-assignment

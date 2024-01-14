@@ -60,8 +60,5 @@ Request: Send a gRPC request to localhost:3001 with the GetUserListByIds method.
 }
 ```
 
-## License
-This project is licensed under the MIT License.
-
 ## Acknowledgments
 Special thanks to the gRPC community for their support and resources.
